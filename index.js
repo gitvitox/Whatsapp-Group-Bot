@@ -18,7 +18,7 @@ const playwright = require('playwright');
             await console.log("Waiting to Scan QR-Code...");
             await currentPage.waitForSelector("div._15OLJ", {timeout: 999999});
             await console.log("Logged in.");
-            await currentPage.click("[title='Anime / Otaku (VG#0001)']");
+            await currentPage.click("[title='test']");
             await console.log("Selected Group.")
             await scanMessages();
         }
